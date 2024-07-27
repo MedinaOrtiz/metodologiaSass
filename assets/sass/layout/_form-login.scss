@@ -1,0 +1,70 @@
+/*  @use "../themes/colors";*/
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+$form-width: 370px;
+
+.login {
+  @include mixins.align-column;
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.form {
+  @include mixins.align-column;
+
+  &__container_inputs {
+    @include mixins.align-column;
+  }
+
+  &__subcontainer {
+    @include mixins.align-column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $form-width;
+    margin-top: 10px;
+  }
+
+  &__container_checkbox {
+    @include mixins.align-column;
+    flex-direction: row;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid variables.$custom-grey;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__checkbox_label {
+    margin-left: 5px;
+    font-size: 1em;
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: variables.$black;
+  }
+
+  &__container-buttons {
+    @include mixins.align-column;
+    margin-top: 10px;
+  }
+
+  &__footer-text {
+    margin-top: 10px;
+  }
+
+  &__link--register {
+    font-weight: bold;
+  }
+}

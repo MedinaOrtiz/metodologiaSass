@@ -1,0 +1,90 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.article {
+  padding: 0px;
+
+  &__title {
+    font-size: variables.$title-secondary;
+    margin-left: 50px;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+    span {
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  &__logo-desafio {
+    @include mixins.logo-desafio;
+  }
+
+  &__text {
+    background-color: variables.$custom-grey;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 50px;
+  }
+
+  &__img {
+    border-radius: 20px;
+    width: 700px;
+    margin: 20px;
+  }
+}
+
+.section {
+  padding: 0px;
+
+  &__title {
+    font-size: variables.$title-secondary;
+    margin-left: 50px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  &__popular {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-radius: 20px;
+    margin: 10px;
+    line-height: 0.1em;
+  }
+
+  &__img {
+    width: 30vw;
+    height: 20vw;
+    border-radius: 20px;
+  }
+
+  &__logo-desafio {
+    @include mixins.logo-desafio;
+  }
+
+  &__autor {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin align-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin logo-desafio{
+      width: 2.5em;
+      border-radius: 20px; 
+  }

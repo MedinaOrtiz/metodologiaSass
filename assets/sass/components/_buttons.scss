@@ -1,0 +1,30 @@
+/*@use "../themes/colors";*/
+/* @use "../themes/fonts"; */
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+
+.button {
+  @include mixins.align-column;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  margin-block: 5px;
+  appearance: none;
+  border-width: 0px;
+  background-color:variables.$white;
+  border-radius: 10px;
+  border: 2px solid variables.$custom-grey;
+  font-family: variables.$poppins-font;
+}
+
+.button--icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.button--primary {
+  background-color: variables.$primary-green;
+  color: variables.$white;
+}

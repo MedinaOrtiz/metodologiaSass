@@ -1,0 +1,19 @@
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.footer__copyright {
+    text-align: right;
+    padding-right: 100px;
+}
